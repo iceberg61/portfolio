@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, MapPin, Send, Clock, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Send, Clock, CheckCircle2, Phone } from "lucide-react";
 import SocialLinks from "./SocialLinks";
 import { fadeLeft, fadeRight, staggerContainer, viewportOnce } from "../lib/motion";
 
@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="max-w-6xl mx-auto px-6 md:px-8 py-24 md:py-28 grid md:grid-cols-[0.9fr_1.1fr] gap-16"
+      className="overflow-x-hidden max-w-6xl mx-auto px-6 md:px-8 py-24 md:py-28 grid md:grid-cols-[0.9fr_1.1fr] gap-16"
     >
       <motion.div
         variants={staggerContainer(0.1)}
@@ -52,6 +52,10 @@ export default function Contact() {
           <div className="flex items-center gap-3 text-mid">
             <Mail size={18} className="text-accent shrink-0" />
             <span>godstimegodwin111@gmail.com</span>
+          </div>
+          <div className="flex items-center gap-3 text-mid">
+            <Phone size={18} className="text-accent shrink-0" />
+            <span>+2349153605825</span>
           </div>
           <div className="flex items-center gap-3 text-mid">
             <MapPin size={18} className="text-accent shrink-0" />

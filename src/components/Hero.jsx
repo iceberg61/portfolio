@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative max-w-6xl mx-auto px-6 md:px-8 pt-16 md:pt-20 pb-24 md:pb-32 grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center"
+      className="relative overflow-x-hidden max-w-6xl mx-auto px-6 md:px-8 pt-16 md:pt-20 pb-24 md:pb-32 grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center"
     >
       {/* Text block — slides in from the left */}
       <motion.div
@@ -80,10 +80,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.35, ease: EASE }}
           className="relative w-[78%] h-[78%] rounded-full overflow-hidden shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)]"
         >
-          
           <img
             src="/profile.jpeg"
-            alt="OMORI"
+            alt="Omori"
             className="w-full h-full object-cover"
           />
         </motion.div>
