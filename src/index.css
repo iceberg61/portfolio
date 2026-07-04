@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-base: var(--c-base);
+  --color-panel: var(--c-panel);
+  --color-panel-alt: var(--c-panel-alt);
+  --color-line: var(--c-line);
+  --color-hi: var(--c-hi);
+  --color-mid: var(--c-mid);
+  --color-low: var(--c-low);
+  --color-accent: var(--c-accent);
+  --color-accent-2: var(--c-accent-2);
+}
+
+/* Light theme (default) */
+:root {
+  --c-base: #f6f7fb;
+  --c-panel: #ffffff;
+  --c-panel-alt: #eef0f8;
+  --c-line: #e1e4f0;
+  --c-hi: #14183a;
+  --c-mid: #565d82;
+  --c-low: #8f96b8;
+  --c-accent: #e08e1f;
+  --c-accent-2: #0f9c88;
+}
+
+/* Dark theme */
+.dark {
+  --c-base: #0b1030;
+  --c-panel: #101636;
+  --c-panel-alt: #141b42;
+  --c-line: #232b52;
+  --c-hi: #f4f6ff;
+  --c-mid: #aab1d6;
+  --c-low: #6b73a0;
+  --c-accent: #ffb547;
+  --c-accent-2: #6ee7d8;
+}
+
+
+
+body {
+  @apply bg-base text-hi;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background: var(--c-accent);
+  color: var(--c-base);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
