@@ -78,7 +78,7 @@ export default function Contact() {
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        className="relative bg-panel border border-line rounded-[20px] p-8 min-h-[420px]"
+        className="relative bg-panel border border-line rounded-[20px] p-8 min-h-105"
       >
         <AnimatePresence mode="wait">
           {sent ? (

@@ -69,7 +69,7 @@ export default function Hero() {
         initial={{ opacity: 0, x: 70 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
-        className="relative aspect-square max-w-[420px] mx-auto grid place-items-center order-first md:order-last"
+        className="relative aspect-square max-w-105 mx-auto grid place-items-center order-first md:order-last"
       >
         <div className="absolute inset-0 rounded-full border border-dashed border-line animate-[spin_60s_linear_infinite]" />
         <div className="absolute inset-[10%] rounded-full border border-panel-alt" />
