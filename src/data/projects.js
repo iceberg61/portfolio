@@ -92,4 +92,21 @@ export const PROJECTS = [
     github: "https://github.com/iceberg61/Portman-pet-services",
     live: "",
   },
+  {
+    slug: "wtn",
+    title: "WTN",
+    tag: "Next.js · TypeScript",
+    hue: "#0369a1",
+    owner: "iceberg61",
+    repo: "WTN",
+    summary: "A full-stack Next.js app built with TypeScript, deployed and live.",
+    problem:
+      "Wanted to build a data-driven app end-to-end using the Next.js App Router with proper models and middleware, not just static pages.",
+    approach:
+      "Built with Next.js and TypeScript, using dedicated model and middleware layers to handle data and request logic cleanly.",
+    outcome: "Shipped and running live in production on Vercel.",
+    stack: ["Next.js", "TypeScript", "Vercel"],
+    github: "https://github.com/iceberg61/WTN",
+    live: "https://wtn-liart.vercel.app",
+  },
 ];
